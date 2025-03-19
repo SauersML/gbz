@@ -12,7 +12,7 @@ repository = "https://github.com/jltsiren/gbwt-rs"
 binaries = ["getopts", "libc", "rand", "rayon"]
 
 [dependencies]
-simple-sds = { git = "https://github.com/jltsiren/simple-sds", branch = "main" }
+simple-sds-sbwt = "0.3.2"
 getopts = { version = "0.2", optional = true }
 libc = { version = "0.2", optional = true }
 rand = { version = "0.8", optional = true }
