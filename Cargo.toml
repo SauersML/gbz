@@ -1,18 +1,18 @@
 [package]
 name = "gbwt"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Jouni Siren <jouni.siren@iki.fi>"]
 edition = "2018"
-description = "Partial reimplementation of the GBWT."
+description = "Partial reimplementation of the GBWT. Exposure for the GBZ struct."
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/jltsiren/gbwt-rs"
+repository = "https://github.com/SauersML/gbz"
 
 [features]
 binaries = ["getopts", "libc", "rand", "rayon"]
 
 [dependencies]
-simple-sds-sbwt = "0.3.2"
+simple_sds = { package = "simple-sds-sbwt", version = "0.3.2" }
 getopts = { version = "0.2", optional = true }
 libc = { version = "0.2", optional = true }
 rand = { version = "0.8", optional = true }
